@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Website for App</title>
+	
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link href="main.css" rel="stylesheet">
+		
+	</head>
+	
+	<body>
+		<nav id="navigation">
+			<b id="logo">2 DCU 4 THREE</b>
+			<img src="header.jpg" height="62" width="62"/>
+			<a href="Contact.html" class="nav-link">Contact</a>
+			<a href="Support.html" class="nav-link">Support</a>
+			<a href="Why.html" class="nav-link">Why?</a>
+			<a href="Download.html" class="nav-link">Download</a>
+			<a href="Home.html" class="nav-link">Home</a>			
+		</nav>
+		
+		<p class="first">This is app designed by DCU students for DCU students. It is hoped that
+		many people will begin to use it and as time goes on we hope to bring this app to all the colleges in Ireland. We plan to do this very soon. If you are a DCU student or 
+		a student from another college feel free to put in your email address below so we can send you out information on updates and new releases on the app.</p>
+		<p class="first">Our email address is 2DCU4Three@mail.dcu.ie</p>
+		<h3>Helping make DCU a better place.</h3>
+		<script type="text/javascript">
+		function validate(form_id, email)
+		{
+			var reg = /^(A-Za-z0-9_\-\.]){1,}\0([A-Za-z0-9_\-\.]{1,}\.([A-Za-z]{2,4})$/;
+			var address = document.forms[form_id].elements[email].value;
+			
+			if(reg.test(address) == false)
+			{
+				alert('Invalidid Email Address. Please Make A Valid one');
+				document.forms[form_id].elements[email].focus();
+				
+				return false;
+			}
+		}
+		</script>
+		<form id="email_form" method="get" action="submit_successful.html" onsubmit="javascript:return validate('email_form','email');">
+		<p>Enter your E-mail address here</p>
+		<input type="text" id="email" name="email" />
+		<input type="submit" value="Submit" />
+		</form>
+		
+		
+		<div id="call-to-action">
+			<center>
+				<h2>Live a wiser student life!</h2>
+				<a href="https://itunes.apple.com/ie/genre/ios/id36?mt=8" id="cta-btn">Available on the App Store</a>
+			</center>
+		</div>
+		<div id="pre-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<p class="prefooter-header"><i class="fa fa-globe"></i> 100's</p>
+						<p>Number of people stranded at night</p>
+					</div>
+					<div class="col-md-3">
+						<p class="prefooter-header"><i class="fa fa-group"></i> 100's</p>
+						<p>Will find people easily with this app</p>
+					</div>
+					<div class="col-md-3">
+						<p class="prefooter-header"><i class="fa fa-eur"></i> 100's</p>
+						<p>Amount of money saved</p>
+					</div>
+					<div class="col-md-3">
+						<p class="prefooter-header"><i class="fa fa-building-o"></i> 100's</p>
+						<p> Number of people who will get home safely</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			Site Designed by <a href="http://www.dcu.ie/">CA115 Group V</a>
+			<a href="https://www.facebook.com/2DCU4Three?ref=hl" title="Facebook"><img style="float:right; padding-right:5px;" src="facebook.png" width="52"height="52" ></a>
+			<a href="https://twitter.com/" title="Twitter"><img style="float:right; padding-right:5px;" src="twitter.png" width="52"height="52" ></a>
+		</div>
+	</body>
+</html>
